@@ -32,5 +32,40 @@ namespace TrackerLibrary
         /// 50%).
         /// </summary>
         public double PrizePercentage { get; set; }
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        public PrizeModel()
+        {
+
+        }
+
+        /// <summary>
+        /// Overflow constructor.
+        /// </summary>
+        /// <param name="placeName"></param>
+        /// <param name="placeNumber"></param>
+        /// <param name="prizeAmount"></param>
+        /// <param name="prizePercentage"></param>
+        public PrizeModel(string placeName, 
+            string placeNumber, 
+            string prizeAmount, 
+            string prizePercentage)
+        {
+            PlaceName = placeName;
+
+            int placeNumberValue = 0;
+            int.TryParse(placeNumber, out placeNumberValue);
+            PlaceNumber = placeNumberValue;
+
+            decimal prizeAmountValue = 0;
+            decimal.TryParse(prizeAmount, out prizeAmountValue);
+            PrizeAmount = prizeAmountValue;
+
+            double prizePercentageValue = 0;
+            double.TryParse(prizePercentage, out prizePercentageValue);
+            PrizePercentage = prizePercentageValue;
+        }
     }
 }
