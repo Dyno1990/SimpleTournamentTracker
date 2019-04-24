@@ -1,0 +1,8 @@
+H:\CSharpProjects\SimpleTournamentTracker\TrackerLibrary\TrackerLibrary\bin\Debug\netstandard1.4\TrackerLibrary.deps.json
+H:\CSharpProjects\SimpleTournamentTracker\TrackerLibrary\TrackerLibrary\bin\Debug\netstandard1.4\TrackerLibrary.dll
+H:\CSharpProjects\SimpleTournamentTracker\TrackerLibrary\TrackerLibrary\bin\Debug\netstandard1.4\TrackerLibrary.pdb
+H:\CSharpProjects\SimpleTournamentTracker\TrackerLibrary\TrackerLibrary\obj\Debug\netstandard1.4\TrackerLibrary.csprojAssemblyReference.cache
+H:\CSharpProjects\SimpleTournamentTracker\TrackerLibrary\TrackerLibrary\obj\Debug\netstandard1.4\TrackerLibrary.csproj.CoreCompileInputs.cache
+H:\CSharpProjects\SimpleTournamentTracker\TrackerLibrary\TrackerLibrary\obj\Debug\netstandard1.4\TrackerLibrary.AssemblyInfo.cs
+H:\CSharpProjects\SimpleTournamentTracker\TrackerLibrary\TrackerLibrary\obj\Debug\netstandard1.4\TrackerLibrary.dll
+H:\CSharpProjects\SimpleTournamentTracker\TrackerLibrary\TrackerLibrary\obj\Debug\netstandard1.4\TrackerLibrary.pdb
