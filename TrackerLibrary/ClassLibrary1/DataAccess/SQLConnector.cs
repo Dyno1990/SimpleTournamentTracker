@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using System.Text;
+using TrackerLibrary.Models;
 
-namespace TrackerLibrary
+namespace TrackerLibrary.DataAccess
 {
     public class SQLConnector : IDataConnection
     {
         //TODO - Make the CreatePrize method actually save to the database
-
         /// <summary>
         /// Saves a new prize to the database
         /// </summary>
