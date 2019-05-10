@@ -16,13 +16,6 @@ namespace TrackerLibrary.DataAccess.TextHelpers
             return $"{ ConfigurationManager.AppSettings["filePath"] }\\{ filename }";
         }
 
-        // * Load the text file
-        // * Convert the text to a List<PrizeModel>
-        // Find the max ID
-        // Add the new record with the new ID (max + 1)
-        // Convert the prizes to lsit<string>
-        // Save the list<string> to the text file
-
         public static List<string> LoadFile(this string file)
         {
             if (!File.Exists(file))
@@ -51,6 +44,18 @@ namespace TrackerLibrary.DataAccess.TextHelpers
             }
 
             return output;
+        }
+
+        public static void SaveToPrizeFile(this List<PrizeModel> models, string fileName)
+        {
+            List<string> lines = new List<string>();
+
+            foreach (PrizeModel p in models)
+            {
+                lines.Add($"{ p.id },{ p.PlaceNumber },{ p.PlaceName },{ p.PrizeAmount },{ p.PrizePercentage }");
+            }
+
+            File.WriteAllLines(fileName.FullFilePath(), lines);
         }
     }
 }
