@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using TrackerLibrary.Models;
+using TrackerLibrary.DataAccess.TextHelpers;
 
 namespace TrackerLibrary.DataAccess
 {
@@ -17,9 +18,12 @@ namespace TrackerLibrary.DataAccess
 
         public PrizeModel CreatePrize(PrizeModel model)
         {
-            model.id = 1;
-
-            return model;
+            // * Load the text file
+            // * Convert the text to a List<PrizeModel>
+            // Find the max ID
+            // Add the new record with the new ID (max + 1)
+            // Convert the prizes to lsit<string>
+            // Save the list<string> to the text file
         }
     }
 }
