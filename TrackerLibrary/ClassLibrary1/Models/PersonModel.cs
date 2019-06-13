@@ -32,5 +32,12 @@ namespace TrackerLibrary.Models
         /// where a SMS with the tournament results could be send.
         /// </summary>
         public string CellPhoneNumber { get; set; }
+
+        public string FullName
+        {
+            get {
+                return $"{ FirstName } { LastName }";
+            }
+        }
     }
 }
